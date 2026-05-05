@@ -1,0 +1,90 @@
+/* Configurações Globais */
+:root {
+    --verde-escuro: #1b4332;
+    --verde-primario: #2d5a27;
+    --verde-folha: #40916c;
+    --terra: #7e4a35;
+    --bege-claro: #f1f8e9;
+    --branco: #ffffff;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #fdfdfd;
+    color: #333;
+}
+
+/* Navegação Personalizada */
+.navbar {
+    background-color: var(--verde-escuro) !important;
+    border-bottom: 4px solid var(--verde-folha);
+}
+
+.navbar-brand {
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+/* Seção Hero (Banner) */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=1200&q=80');
+    background-size: cover;
+    background-position: center;
+    color: var(--branco);
+    padding: 100px 0;
+    margin-bottom: -50px; /* Sobreposição elegante */
+}
+
+/* Cartões e Formulários */
+.card {
+    border: none;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-cronograma {
+    border-left: 8px solid var(--verde-primario) !important;
+    background-color: var(--branco);
+    margin-bottom: 15px;
+}
+
+.btn-success {
+    background-color: var(--verde-primario);
+    border: none;
+    padding: 12px;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: var(--verde-escuro);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Estilização da Linha do Tempo */
+#resultadoCronograma strong {
+    color: var(--verde-escuro);
+    display: block;
+    font-size: 1.1rem;
+}
+
+/* Destaque para Sustentabilidade */
+.border-warning {
+    border-left-color: #ffc107 !important;
+}
+
+.text-success {
+    color: var(--verde-primario) !important;
+}
+
+/* Rodapé */
+footer {
+    background-color: #1a1a1a !important;
+    border-top: 5px solid var(--terra);
+}
